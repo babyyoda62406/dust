@@ -1,0 +1,22 @@
+
+.scroll-no { 
+    overflow:auto; 
+}
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.scroll-no::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.scroll-no::-webkit-scrollbar:vertical {
+    width:0px;
+}
+
+.scroll-no::-webkit-scrollbar-button:increment,.scroll-no::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.scroll-no::-webkit-scrollbar:horizontal {
+    height: 0px;
+}
+  
