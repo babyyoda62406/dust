@@ -1,0 +1,34 @@
+{
+  "name": "dust",
+  "version": "0.0.1",
+  "description": "Este es un fracaso mas DLB AND DTM",
+  "workspaces": [
+    "front",
+    "back"
+  ], 
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babyyoda62406/dust.git"
+  },
+  "author": "DTM & DLB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babyyoda62406/dust/issues"
+  },
+  "homepage": "https://github.com/babyyoda62406/dust#readme",
+  "devDependencies": {
+    "standard": "17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json",
+    "ignorePatterns": [
+      "front/node_modules",
+      "front/build",
+      "back/node_modules"
+    ]
+  }
+}
