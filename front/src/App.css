@@ -2,8 +2,13 @@ p {
   margin: 0;
 }
 
+.bg-gray {
+  background-color: rgb(241, 241, 241);
+}
 
-
+.card {
+  --bs-card-border-width: none;
+}
 
 
 .App {

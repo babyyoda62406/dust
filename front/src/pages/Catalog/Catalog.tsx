@@ -41,11 +41,12 @@ const Catalog= () => {
 
   return (
      <div>
-         <div className='m-4'>
-            <h1>{ state.category }</h1>
-
-            <Categories names={["T-Shirt", "Crop tops", "Sleeveless", "Pullover", "Blouse", "Shirt"]}></Categories>
-
+         <div className=''>
+            <div className='m-4'>
+               <h1>{ state.category }</h1>
+               <Categories names={["T-Shirt", "Crop tops", "Sleeveless", "Pullover", "Blouse", "Shirt"]}></Categories>
+            </div>
+            
             <div className='d-flex justify-content-around'>
                <div className='d-flex'>
                   <span className='bi bi-filter icon-size'></span>
@@ -60,10 +61,18 @@ const Catalog= () => {
                </div>
             </div>
 
-            <div>
-            <Card title={'hola'} photo={mainPhoto} stars={4} clasification={'Dorothy Perkins'} 
-          name={"Evening Dress"} price={{"normal": 15, "less": 12}} 
-          option={{"color":"", "text":" "}} horizontal={true}></Card>
+            <div className='bg-gray p-1'>
+               <Card photo={mainPhoto} stars={4} clasification={'Dorothy Perkins'} 
+                  name={"Evening Dress"} price={{"normal": 15, "less": 0}} 
+                  option={{"color":"", "text":" "}} horizontal={true}></Card>
+               
+               <Card photo={mainPhoto} stars={4} clasification={'Dorothy Perkins'} 
+                  name={"Evening Dress"} price={{"normal": 15, "less": 12}} 
+                  option={{"color":"", "text":" "}} horizontal={true}></Card>
+               
+               <Card photo={mainPhoto} stars={4} clasification={'Dorothy Perkins'} 
+                  name={"Evening Dress"} price={{"normal": 15, "less": 12}} 
+                  option={{"color":"", "text":" "}} horizontal={true}></Card>
             </div>
          </div>
         
