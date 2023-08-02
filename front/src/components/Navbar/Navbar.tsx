@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
-
-import { Navigate } from "react-router-dom"; 
+import React from 'react';
+ 
 
 import './Navbar.css'
   
@@ -24,8 +23,8 @@ const Navbar: React.FC<Props> = ({ page}) => {
    <div>
       <div className='mt-5'></div>
      <nav className='d-flex justify-content-evenly fixed-bottom bg-light rounded-top-4 p-2'>
-        <div className=''><span className={'bi bi-home icon-size ' + select("home", page)}></span></div>
-        <div className=''><span className={'bi bi-shop icon-size ' + select("shop", page)}></span></div>
+        <div className=''><span className={'bi bi-house-door icon-size ' + select("home", page)}></span></div>
+        <div className=''><span className={'bi bi-cart3 icon-size ' + select("shop", page)}></span></div>
         <div className=''><span className={'bi bi-bag icon-size ' + select("bag", page)}></span></div>
         <div className=''><span className={'bi bi-heart icon-size ' + select("heart", page)}></span></div>
         <div className=''><span className={'bi bi-person icon-size ' + select("person", page)}></span></div>

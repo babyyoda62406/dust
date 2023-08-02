@@ -10,6 +10,31 @@ p {
   --bs-card-border-width: none;
 }
 
+.icon-card-heart{
+  font-size: larger;
+}
+.like {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(43, 42, 42);
+    background: #fff;
+    z-index: 100;
+}
+
+.contenedor{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.centrado-3{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+
 
 .App {
   text-align: center;

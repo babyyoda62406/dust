@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-
-import { Navigate } from "react-router-dom"; 
-import star from "./../../img/five-stars.png"
-import './../../css/bootstrap-icons.css'
+import React from 'react';
+  
 import './Card.css'
+
+import { drawStars } from '../../Utils/Utils';
 
 interface Props { 
   photo: string
@@ -20,15 +19,7 @@ const drawOption = (option: { color: string, text: string }) => {
     <button className={'rounded-5 btn btn-' + option.color }>{ option.text }</button>
   )
 }
-
-const drawStars = (stars: number) => {
-
-  return (
-    <div>
-      <img src={star} alt=""  width={130}/>
-    </div>
-  )
-}
+ 
 
 const drawPrice = (price: { normal: number, less: number|null }) => {
   if (price.less){
@@ -83,9 +74,8 @@ const Card: React.FC<Props> = ({ photo, stars, clasification, name, price, optio
         </div>
 
         <div className={"card-body d-flex flex-column " + setColHorizontal8(horizontal)}>    
-            <div className={'d-flex stars ' + setOrden3(horizontal)}>
+            <div className={'stars ' + setOrden3(horizontal)}>
               {drawStars(stars)} 
-              <p className='text-muted mt-1 ms-2'>({ stars })</p>
             </div>
             <p className={'text-muted ' + setOrden2(horizontal)}>{ name }</p> 
             <p className={'h2 ' + setOrden(horizontal)}>{ clasification }</p>

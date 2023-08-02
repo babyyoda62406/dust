@@ -1,9 +1,5 @@
-import React, { useState, useEffect } from 'react';
-
-import { Navigate } from "react-router-dom";
-import  Card from "../../components/Card/Card"
-import Navbar from '../../components/Navbar/Navbar'; 
-import Slider from '../../components/Slider/Slider';
+ 
+import Navbar from '../../components/Navbar/Navbar'; import Slider from '../../components/Slider/Slider';
 import './Home.css'
 import mainPhoto from "./../../img/photo3.jpg" 
 

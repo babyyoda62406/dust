@@ -1,49 +1,19 @@
-import React, { useState, useEffect } from 'react';
-
-import { Navigate } from "react-router-dom";
+ 
+ 
 import  Card from "../../components/Card/Card"
-import Navbar from '../../components/Navbar/Navbar'; 
-import Slider from '../../components/Slider/Slider'; 
+import Navbar from '../../components/Navbar/Navbar';  
 import Categories from '../../components/Categories/Categories';
 import mainPhoto from "./../../img/photo3.jpg"  
-
-interface Element {
-   photo: string
-   categories: string
-   name: string
-   stars: number
-   price: { normal: number, less: number| null }
-}
-
-// interface Props {
-//    categories: string[]
-//    elements: Element[]
-//  }
-
-
-
-type State = {
-   category: string,
-   filterHigh: boolean,
-   elements: Element[]| null
- };
- 
- let stateGeneral: State = { 
-   category: "Woman Top",
-   filterHigh: false, 
-   elements: null
- };
  
 
 
-const Catalog= () => { 
-   const [state, setState] = useState(stateGeneral)
+const Catalog= () => {  
 
   return (
      <div>
          <div className=''>
             <div className='m-4'>
-               <h1>{ state.category }</h1>
+               <h1>Category</h1>
                <Categories names={["T-Shirt", "Crop tops", "Sleeveless", "Pullover", "Blouse", "Shirt"]}></Categories>
             </div>
             

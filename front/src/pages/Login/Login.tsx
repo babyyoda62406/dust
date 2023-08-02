@@ -1,13 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 
+import { login } from '../../Services/auth';
 import { Navigate } from "react-router-dom";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 
-import { login } from '../../Services/auth';
-import { setConstantValue } from 'typescript';
-
-type Props = {};
-
+ 
 type State = {
   redirect: string | null,
   username: string,
@@ -61,7 +58,7 @@ function Login() {
         const s: any = {
           redirect: "profile"
         }
-        // setState(s)
+        setState(s)
     } catch (error: any) {
       const resMessage: string =
         (error.response &&
@@ -69,11 +66,11 @@ function Login() {
           error.response.data.message) ||
         error.message ||
         error.toString();
-
-        const s: any = {
+ 
+        setState({
+          ...state,
           message: resMessage
-        }
-        setState(s)
+        })
     }
   }
   const { loading, message } = state

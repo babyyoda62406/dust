@@ -1,23 +1,9 @@
-import React, { useState, useEffect } from 'react';
+
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
-import { Navigate } from "react-router-dom"; 
 import Card from '../Card/Card';
-import p from "./../../img/photo3.jpg" 
-import pa from "./../../img/five-stars.png" 
-import '@splidejs/react-splide/css';
-
-interface Props { 
-}
-
-const select = (name: string, page: string) => {
-   
-   if (name == page) {
-      console.log(name, page)
-      return "icon-red"
-   }
-   return name == page ? "icon-red" : ""
-}
+import p from "./../../img/photo3.jpg"  
+ 
 
 const Slider = ({ }) => {
   
