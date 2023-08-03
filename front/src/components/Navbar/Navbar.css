@@ -4,3 +4,21 @@
 .icon-red {
     color: red;
 }
+
+
+.navBarItem{
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 1px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+
+
+
+.navBarItem:hover{
+    border: 1px solid gray;
+}
