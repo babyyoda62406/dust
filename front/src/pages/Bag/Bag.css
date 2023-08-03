@@ -1,0 +1,29 @@
+.option-1 {
+    position: absolute;
+}
+
+.like {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(43, 42, 42);
+    background: #fff;
+    z-index: 100;
+}
+
+
+
+ 
+
+.centrado{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+.centrado-2{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+ 

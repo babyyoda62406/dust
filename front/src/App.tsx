@@ -1,6 +1,4 @@
-
- 
-import Home from './pages/Home/Home'  
+import Filters from './components/Filters/Filters';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/bootstrap-icons.css'
 import '@splidejs/react-splide/css';
@@ -10,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Home></Home>
+      <Filters></Filters>
     </>
   )
 }
