@@ -1,10 +1,3 @@
-
-
-// Demo styles, see 'Styles' section below for some notes on use.
-import 'react-accessible-accordion/dist/fancy-example.css';
-
-
-
 import Card from '../../components/Card/Card';
 import Navbar from '../../components/Navbar/Navbar';
 import mainPhoto from "./../../img/photo3.jpg"  

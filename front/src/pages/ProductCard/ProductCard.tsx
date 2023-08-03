@@ -5,7 +5,7 @@ import mainPhoto from "./../../img/photo3.jpg"
 import { drawStars } from '../../Utils/Utils';
 import './ProductCard.css'
   
-const ProductCard= () => {  
+const ProductCard = () => {  
 
 
   return (

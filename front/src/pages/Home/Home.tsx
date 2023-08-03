@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar/Navbar'; import Slider from '../../c
 import './Home.css'
 import mainPhoto from "./../../img/photo3.jpg" 
 
-function Home() { 
+const Home() = () => { 
   
   return (
      <div>

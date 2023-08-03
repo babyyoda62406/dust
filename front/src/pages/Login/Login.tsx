@@ -23,7 +23,7 @@ let stateGeneral: State = {
 
 
 
-function Login() {
+const Login = () =>{
   const [state, setState] = useState(stateGeneral)
 
   if (state.redirect) {
