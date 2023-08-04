@@ -1,5 +1,5 @@
 type Hlayout = {
-    MPoint:number, jostick: (arg: number)=>void
+    MPoint:number
 }
 
 type PropsCard = { 

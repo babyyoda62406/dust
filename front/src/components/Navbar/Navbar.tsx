@@ -1,10 +1,8 @@
-import React from 'react';
- 
-
-import './Navbar.css'
-import { Hlayout } from '../../types/types';
-  
-const Navbar: React.FC<Hlayout> = ({MPoint, jostick}) => {
+import { useContext } from 'react';
+import './Navbar.css'  
+import { GlobalContext } from '../../../context/GlobalContext';
+const Navbar = () => {
+  const {MPoint , jostick} = useContext(GlobalContext)
 
   return (
    <div>

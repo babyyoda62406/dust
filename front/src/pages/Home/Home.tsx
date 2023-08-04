@@ -2,12 +2,10 @@
 import Navbar from '../../components/Navbar/Navbar'; import Slider from '../../components/Slider/Slider';
 import './Home.css'
 import mainPhoto from "./../../img/photo3.jpg" 
-import { Hlayout } from '../../types/types';
-import {FC} from 'react'
 
-
-const  Home:FC<Hlayout> = ({jostick , MPoint}) => { 
-
+ 
+ 
+const  Home = () => {  
   
   return (
      <div>
@@ -24,7 +22,7 @@ const  Home:FC<Hlayout> = ({jostick , MPoint}) => {
           </div>
         </div> 
         <Slider></Slider>
-        <Navbar MPoint={MPoint} jostick={jostick}></Navbar>
+        <Navbar></Navbar>
      </div>
     
   );
