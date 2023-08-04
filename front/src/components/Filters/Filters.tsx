@@ -1,5 +1,3 @@
- 
-  
 import './Filters.css'
  
 const Filters  = ( ) => {

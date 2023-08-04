@@ -4,15 +4,7 @@ import './Card.css'
 
 import { drawStars } from '../../Utils/Utils';
 
-interface Props { 
-  photo: string
-  stars: number
-  clasification: string
-  name: string
-  price: { normal: number, less: number| null }
-  option: { color: string, text: string }
-  horizontal: boolean
-}
+
 
 const drawOption = (option: { color: string, text: string }) => {
   return (

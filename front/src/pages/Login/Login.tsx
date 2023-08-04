@@ -3,28 +3,20 @@ import { useState } from 'react';
 import { login } from '../../Services/auth';
 import { Navigate } from "react-router-dom";
 import { Formik, Field, Form, ErrorMessage } from "formik";
+import { State } from '../../types/types';
 
- 
-type State = {
-  redirect: string | null,
-  username: string,
-  password: string,
-  loading: boolean,
-  message: string
-};
+import Navbar from '../../components/Navbar/Navbar'; 
+import { FC } from "react";
+import { Hlayout } from "../../types/types";
 
-let stateGeneral: State = {
-  redirect: null,
-  username: "",
-  password: "",
-  loading: false,
-  message: ""
-};
-
-
-
-const Login = () =>{
-  const [state, setState] = useState(stateGeneral)
+const Login:FC<Hlayout> = ({MPoint  , jostick}) =>{
+  const [state, setState] = useState<State>({
+    redirect: null,
+    username: "",
+    password: "",
+    loading: false,
+    message: ""
+  })
 
   if (state.redirect) {
     console.log("jpla")
@@ -125,6 +117,8 @@ const Login = () =>{
             </Form>
           </Formik>
         </div>
+
+        <Navbar MPoint={MPoint} jostick={jostick}></Navbar>
       </div>
     
   );

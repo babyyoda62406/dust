@@ -1,11 +1,8 @@
 import React from 'react';
- 
+import { PropsCategories } from '../../types/types';
 import './../../css/bootstrap-icons.css'
 import './Categories.css'
 
-interface Props {
-  names: string[] 
-} 
 
 const draw = (ele: string) => {
   return (
@@ -15,7 +12,7 @@ const draw = (ele: string) => {
   )
 }
 
-const Categories: React.FC<Props> = ({ names }) => {
+const Categories: React.FC<PropsCategories> = ({ names }) => {
   
   return (
      <div className='d-flex scroll-no'>

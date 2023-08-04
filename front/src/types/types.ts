@@ -2,5 +2,27 @@ type Hlayout = {
     MPoint:number, jostick: (arg: number)=>void
 }
 
+type PropsCard = { 
+    photo: string
+    stars: number
+    clasification: string
+    name: string
+    price: { normal: number, less: number| null }
+    option: { color: string, text: string }
+    horizontal: boolean
+}
 
-export type {Hlayout}
+
+interface PropsCategories {
+    names: string[] 
+} 
+
+type State = {
+    redirect: string | null,
+    username: string,
+    password: string,
+    loading: boolean,
+    message: string
+};
+
+export type { Hlayout, PropsCategories, State }
