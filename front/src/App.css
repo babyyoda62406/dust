@@ -5,6 +5,9 @@ p {
 .bg-gray {
   background-color: rgb(241, 241, 241);
 }
+.bg-red {
+  background-color: red;
+}
 
 .card {
   --bs-card-border-width: none;

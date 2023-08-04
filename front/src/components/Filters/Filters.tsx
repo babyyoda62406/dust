@@ -15,25 +15,57 @@ const Filters  = ( ) => {
         <p className="bg-gray p-3">Colors</p>
         <div className="m-3 d-flex">
           <div className="circle  ">
-            <div className="bg-light circle-interior">
+            <div className="bg-light circle-interior contenedor">
               <div className="circle-color"></div>
+            </div>
+          </div>
+          
+          <div className="circle  ">
+            <div className="bg-light circle-interior contenedor">
+              <div className="circle-color beige"></div>
+            </div>
+          </div>
+
+          <div className="circle  ">
+            <div className="bg-light circle-interior contenedor">
+              <div className="circle-color bg-red"></div>
+            </div>
+          </div>
+
+          <div className="circle  ">
+            <div className="bg-light circle-interior contenedor">
+              <div className="circle-color bg-gray"></div>
+            </div>
+          </div>
+
+          <div className="circle  ">
+            <div className="bg-light circle-interior contenedor">
+              <div className="circle-color bg-primary"></div>
             </div>
           </div>
         </div>
 
         <p className="bg-gray p-3">Sizes</p>
-        <div className="mt-3">
-
+        <div className="m-3 d-flex">
+          <div className="box-sizes me-2">XS</div> 
+          <div className="box-sizes select-option me-2">S</div> 
+          <div className="box-sizes select-option me-2">M</div> 
+          <div className="box-sizes me-2">L</div> 
+          <div className="box-sizes me-2">XL</div> 
         </div>
 
         <p className="bg-gray p-3">Category</p>
-        <div className="mt-3">
-
+        <div className="m-3 d-flex">
+          <div className="box-sizes category-with me-2">All</div>
+          <div className="box-sizes category-with select-option me-2">Women</div>
+          <div className="box-sizes category-with select-option me-2">Mem</div>
+          <div className="box-sizes category-with me-2">Boys</div>
+          <div className="box-sizes category-with me-2">Girls</div>
         </div>
 
         <div className="d-flex justify-content-center">
           <button className="btn border-black rounded-5 ps-5 pe-5">Discard</button>
-          <button className="btn btn-danger ms-3 rounded-5 ps-5 pe-5">Apply</button>
+          <button className="btn btn-red   ms-3 rounded-5 ps-5 pe-5">Apply</button>
         </div>
       </form>
     </div>

@@ -17,6 +17,9 @@ const HandlerLayout: FC<Hlayout> = ({MPoint , jostick})=>{
         case 2:
             screen = <Bag MPoint={MPoint} jostick = {jostick}/>
             break
+        case 3:
+            screen = <Bag MPoint={MPoint} jostick = {jostick}/>
+            break
         case 4:
             screen = <Login MPoint={MPoint} jostick = {jostick}/>
             break
