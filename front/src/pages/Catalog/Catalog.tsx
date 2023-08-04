@@ -4,11 +4,8 @@ import  Card from "../../components/Card/Card"
 import Navbar from '../../components/Navbar/Navbar';  
 import Categories from '../../components/Categories/Categories';
 import mainPhoto from "./../../img/photo3.jpg"  
-import { FC } from "react";
-import { Hlayout } from "../../types/types";
- 
 
-const Catalog:FC<Hlayout> = ({MPoint  , jostick}) => {  
+const Catalog = () => {  
 
   return (
      <div>
@@ -47,7 +44,7 @@ const Catalog:FC<Hlayout> = ({MPoint  , jostick}) => {
             </div>
          </div>
         
-        <Navbar MPoint={MPoint} jostick={jostick}></Navbar>
+        <Navbar></Navbar>
      </div>
     
   );

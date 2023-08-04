@@ -1,23 +1,25 @@
-import { FC } from "react"
+import {useContext } from "react"
 import Home from "../../pages/Home/Home";
 import Catalog from "../../pages/Catalog/Catalog";
-import { Hlayout } from "../../types/types";
+import { GlobalContext } from "../../../context/GlobalContext";
 
-const HandlerLayout: FC<Hlayout> = ({MPoint , jostick})=>{
+const HandlerLayout = () => {
+    const {MPoint} = useContext(GlobalContext)
+
     let screen = <div></div>
     switch (MPoint) {
         case 0:
-            screen = <Home MPoint={MPoint} jostick = {jostick} />            
+            screen = <Home />
             break;
         case 1:
-            screen = <Catalog MPoint={MPoint} jostick = {jostick}/>
-            break
+            screen = <Catalog />
+            break;
         default:
-            screen = <Home MPoint={MPoint} jostick = {jostick} />            
+            screen = <Home />
             break
     }
     return <>
-        {screen}        
+        {screen}
     </>
 }
 
