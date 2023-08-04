@@ -3,6 +3,8 @@ import React from 'react';
 import './Card.css'
 
 import { drawStars } from '../../Utils/Utils';
+import { PropsCard } from '../../types/types';
+
 
 
 
@@ -48,7 +50,7 @@ const setOrden2 = (horizontal: boolean) => {
 const setOrden3 = (horizontal: boolean) => { 
   return horizontal == true ? "order-2" : ""
 }
-const Card: React.FC<Props> = ({ photo, stars, clasification, name, price, option, horizontal }) => {
+const Card: React.FC<PropsCard> = ({ photo, stars, clasification, name, price, option, horizontal }) => {
   
   return (
     <div className='card m-3'>

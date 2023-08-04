@@ -1,10 +1,9 @@
 import Card from '../../components/Card/Card';
 import Navbar from '../../components/Navbar/Navbar';
-import mainPhoto from "./../../img/photo3.jpg"  
-import { Hlayout } from "../../types/types";
+import mainPhoto from "./../../img/photo3.jpg"
 import './Bag.css'
  
-const Bag:FC<Hlayout> = ({MPoint  , jostick}) => {
+const Bag = () => {
   
   return (
     <div className="m-2">
@@ -37,7 +36,7 @@ const Bag:FC<Hlayout> = ({MPoint  , jostick}) => {
       </div>
       <div className="mb-5">.</div>
 
-      <Navbar MPoint={MPoint} jostick={jostick}></Navbar>
+      <Navbar></Navbar>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import mainPhoto from "./../../img/photo3.jpg"
 
  
  
-const  Home = () => {  
+const Home = () => {  
   
   return (
      <div>

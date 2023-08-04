@@ -6,10 +6,8 @@ import { Formik, Field, Form, ErrorMessage } from "formik";
 import { State } from '../../types/types';
 
 import Navbar from '../../components/Navbar/Navbar'; 
-import { FC } from "react";
-import { Hlayout } from "../../types/types";
 
-const Login:FC<Hlayout> = ({MPoint  , jostick}) =>{
+const Login = () =>{
   const [state, setState] = useState<State>({
     redirect: null,
     username: "",
@@ -118,7 +116,7 @@ const Login:FC<Hlayout> = ({MPoint  , jostick}) =>{
           </Formik>
         </div>
 
-        <Navbar MPoint={MPoint} jostick={jostick}></Navbar>
+        <Navbar></Navbar>
       </div>
     
   );

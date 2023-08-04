@@ -25,4 +25,4 @@ type State = {
     message: string
 };
 
-export type { Hlayout, PropsCategories, State }
+export type { Hlayout, PropsCategories, PropsCard, State }
