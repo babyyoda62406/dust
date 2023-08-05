@@ -4,6 +4,7 @@ import Catalog from "../../pages/Catalog/Catalog";
 import Bag from "../../pages/Bag/Bag";
 import Login from "../../pages/Login/Login";
 import { GlobalContext } from "../../../context/GlobalContext";
+import Filters from "../Filters/Filters";
 
 const HandlerLayout = () => {
     const {MPoint} = useContext(GlobalContext) 
@@ -20,7 +21,7 @@ const HandlerLayout = () => {
             screen = <Bag />
             break; 
         case 4:
-            screen = <Login />
+            screen = <Filters />
             break; 
         default:
             screen = <Home />
