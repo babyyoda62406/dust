@@ -44,7 +44,7 @@ const Catalog = () => {
             </div>
          </div>
         
-        <Navbar></Navbar>
+        <Navbar/>
      </div>
     
   );

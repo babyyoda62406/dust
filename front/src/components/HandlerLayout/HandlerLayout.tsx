@@ -4,6 +4,7 @@ import Catalog from "../../pages/Catalog/Catalog";
 import Bag from "../../pages/Bag/Bag"; 
 import { GlobalContext } from "../../../context/GlobalContext"; 
 import Profile from "../../pages/Profile/Profile";
+import Favorites from "../../pages/Favorites/Favorites";
 
 const HandlerLayout = () => {
     const {MPoint} = useContext(GlobalContext) 
@@ -18,6 +19,9 @@ const HandlerLayout = () => {
             break; 
         case 2:
             screen = <Bag />
+            break; 
+        case 3:
+            screen = <Favorites />
             break; 
         case 4:
             screen = <Profile />
