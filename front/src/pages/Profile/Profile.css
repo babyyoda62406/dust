@@ -1,0 +1,13 @@
+.img-profile {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.fine-divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(119, 116, 116, 0.149);
+    margin: 10px 0;
+}
+ 

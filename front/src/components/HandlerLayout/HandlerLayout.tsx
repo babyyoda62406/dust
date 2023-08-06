@@ -1,10 +1,9 @@
 import {useContext } from "react"
 import Home from "../../pages/Home/Home";
 import Catalog from "../../pages/Catalog/Catalog"; 
-import Bag from "../../pages/Bag/Bag";
-import Login from "../../pages/Login/Login";
-import { GlobalContext } from "../../../context/GlobalContext";
-import Filters from "../Filters/Filters";
+import Bag from "../../pages/Bag/Bag"; 
+import { GlobalContext } from "../../../context/GlobalContext"; 
+import Profile from "../../pages/Profile/Profile";
 
 const HandlerLayout = () => {
     const {MPoint} = useContext(GlobalContext) 
@@ -21,7 +20,7 @@ const HandlerLayout = () => {
             screen = <Bag />
             break; 
         case 4:
-            screen = <Filters />
+            screen = <Profile />
             break; 
         default:
             screen = <Home />
