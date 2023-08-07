@@ -13,7 +13,7 @@ const Favorites = () => {
      <div>
         <div className=''>
           <div className='m-4'>
-              <h1>Favotites</h1>
+              <h1>Favorites</h1>
               <Categories names={["T-Shirt", "Crop tops", "Sleeveless", "Pullover", "Blouse", "Shirt"]}></Categories>
           </div>
           

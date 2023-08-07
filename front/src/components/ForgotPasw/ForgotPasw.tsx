@@ -10,7 +10,7 @@ import * as React from 'react';
 
 
 
-const SignIn:React.FC<Sign> = ({ change }) =>{
+const ForgotPasw:React.FC<Sign> = ({ change }) =>{
   const [state, setState] = useState<State>({
     redirect: null,
     username: "",
@@ -68,50 +68,35 @@ const SignIn:React.FC<Sign> = ({ change }) =>{
   }
   const { loading, message } = state
   
-  const forgot = () => {
-    change(2)
-  } 
-  const dontHave = () => {
-    change(1)
+  const back = () => {
+    change(0)
   } 
   
   return (
     <div className="col-md-12">
-      <h1 className="m-3">Login</h1>
+      <h1 className="m-3">Forgot Password</h1>
     
       <div className="card card-container mt-5"> 
-
+        <p>Please, enter your email address. You will reveive a link to create a new password via email</p>
         <Formik
           initialValues={initialValues} 
           onSubmit={submit}
         >
           <Form>
             <div className="form-group m-4">
-              <label htmlFor="username">Username</label>
-              <Field name="username" type="text" className="form-control" />
+              <label htmlFor="email">Email</label>
+              <Field name="email" type="email" className="form-control" />
               <ErrorMessage
-                name="username"
+                name="Email"
                 component="div"
                 className="alert alert-danger"
               />
             </div>
 
-            <div className="form-group m-4">
-              <label htmlFor="password">Password</label>
-              <Field name="password" type="password" className="form-control" />
-              <ErrorMessage
-                name="password"
-                component="div"
-                className="alert alert-danger"
-              />
-            </div>
+             
             
-            <div className="m-4 d-flex justify-content-end cursor" onClick={() => forgot()}>
-              <p>Forgot your password?</p>
-              <span className="bi bi-arrow-right text-red ms-2 icon-size-lr"></span>
-            </div>
-            <div className="m-4 d-flex justify-content-end cursor" onClick={() => dontHave()}>
-              <p>Dont have an account?</p>
+            <div className="m-4 d-flex justify-content-end cursor" onClick={() => back()}>
+              <p>Atras</p>
               <span className="bi bi-arrow-right text-red ms-2 icon-size-lr"></span>
             </div>
 
@@ -120,7 +105,7 @@ const SignIn:React.FC<Sign> = ({ change }) =>{
                 {loading && (
                   <span className="spinner-border spinner-border-sm"></span>
                 )}
-                <span>Login</span>
+                <span>Send</span>
               </button>
             </div>
 
@@ -141,4 +126,4 @@ const SignIn:React.FC<Sign> = ({ change }) =>{
   );
 }
 
-export default SignIn;
+export default ForgotPasw;
