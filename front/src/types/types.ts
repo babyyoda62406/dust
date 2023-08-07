@@ -25,4 +25,8 @@ type State = {
     message: string
 };
 
-export type { Hlayout, PropsCategories, PropsCard, State }
+type Sign = {
+    change: (arg: number)=>void
+}
+
+export type { Hlayout, PropsCategories, PropsCard, State, Sign }

@@ -10,7 +10,7 @@ import './Profile.css'
  
 const Profile = () => {  
   const status: string = "d"
-  if (!status) {
+  if (status) {
     return (
       <>
         <Login/>
