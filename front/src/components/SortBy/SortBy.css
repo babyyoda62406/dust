@@ -1,0 +1,7 @@
+.option-sort {
+    padding: 15px;
+}
+.selected-sort {
+    background-color: red;
+    color: wheat;
+}
