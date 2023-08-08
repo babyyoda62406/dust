@@ -98,7 +98,7 @@ const Filters = () => {
 
         <div className="d-flex justify-content-center">
           <button className="btn border-black rounded-5 ps-5 pe-5">Discard</button>
-          <button className="btn btn-red   ms-3 rounded-5 ps-5 pe-5">Apply</button>
+          <button className="btn btn-red ms-3 rounded-5 ps-5 pe-5">Apply</button>
         </div>
       </form>
     </div>

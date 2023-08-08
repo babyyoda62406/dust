@@ -1,16 +1,13 @@
  
  
-import  Card from "../../components/Card/Card"
+import Card from "../../components/Card/Card"
 import Navbar from '../../components/Navbar/Navbar';  
 import Categories from '../../components/Categories/Categories';
 import mainPhoto from "./../../img/photo3.jpg"  
-import SortBy from "../../components/SortBy/SortBy";
-import { useState } from "react";
+import SortBy from "../../components/SortBy/SortBy"; 
  
 
 const Catalog = () => {   
-   const change = () => { 
-   }
    return (
       <>
          <div>
